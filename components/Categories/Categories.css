@@ -1,0 +1,21 @@
+#categories-section {
+    padding: 2em 2em;
+}
+
+.categories-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 6em;
+}
+
+.section-heading {
+    margin: 0 0 1.5em 0;
+}
+
+@media(max-width: 768px) {
+    .categories-area {
+        flex-direction: column;
+        padding: 0 1em;
+    }
+}

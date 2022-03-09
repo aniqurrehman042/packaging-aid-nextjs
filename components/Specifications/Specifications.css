@@ -1,0 +1,40 @@
+.specifications {
+    padding: 2em 4em;
+    background-color: var(--primary-golden);
+}
+
+.specifications ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.specifications img {
+    height: 6rem;
+}
+
+.specification-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.specification-item p {
+    width: 10em;
+    color: var(--yellowish-black);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+@media(max-width: 768px) {
+    .specifications ul {
+        flex-direction: column;
+    }
+
+    .specification-item {
+        margin-bottom: 1em;
+    }
+}

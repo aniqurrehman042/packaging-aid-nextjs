@@ -1,0 +1,47 @@
+#reviewsSection {
+    padding: 0 2em;
+}
+
+.reviews-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.review-box {
+    width: 20vw;
+    text-align: center;
+    padding: 1em 3em;
+    font-size: 0.8rem;
+    line-height: 2em;
+}
+
+.ic-quote {
+    color: var(--yellowish-black);
+    font-size: 1.5rem;
+}
+
+.reviewer-photo {
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.reviewer-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--yellowish-black);
+}
+
+@media(max-width: 768px) {
+    .reviews-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #reviewsSection {
+        padding: 0 1em;
+    }
+
+    .review-box {
+        width: 80vw;
+    }
+}
