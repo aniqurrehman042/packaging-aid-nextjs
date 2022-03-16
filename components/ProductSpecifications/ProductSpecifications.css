@@ -1,0 +1,26 @@
+.specifications-area {
+    margin: 1rem 0;
+    color: var(--dark-grey);
+    font-size: 0.9rem;
+}
+
+.specifications-area > :nth-child(odd) {
+    background-color: var(--light-grey);
+}
+
+.specification-row {
+    padding: 1em;
+    display: flex;
+}
+
+.specification-row p {
+    margin: 0;
+}
+
+.specification-name {
+    flex: 1;
+}
+
+.specification-value {
+    flex: 3;
+}

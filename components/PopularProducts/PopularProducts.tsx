@@ -2,8 +2,8 @@ import popularProducts from "../../data/raw/popular-products";
 import ProductBox from "../ProductBox/ProductBox";
 
 const PopularProducts = () => {
-    const popularProductsList = popularProducts.map((product) => {
-        return <ProductBox product={product}></ProductBox>
+    const popularProductsList = popularProducts.map((product, index) => {
+        return <ProductBox key={index} product={product}></ProductBox>
     });
     return (
         <section id="popular-products-section">

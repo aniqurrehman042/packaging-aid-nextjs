@@ -1,0 +1,14 @@
+.blog-post-area {
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px 2px rgba(0,0,0,0.3);
+    padding: 1em 2em;
+    margin: 2rem 3em;
+}
+
+.blog-post-area h1 {
+    font-size: 3rem;
+}
+
+.blog-post-area img {
+    width: 100%;
+}

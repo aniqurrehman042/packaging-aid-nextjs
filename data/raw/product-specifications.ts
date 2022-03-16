@@ -1,4 +1,4 @@
-import { ProductSpecification } from "../models/product-specification.model";
+import ProductSpecification from "../models/product-specification.model";
 
 const productSpecifications: ProductSpecification[] = [
     {

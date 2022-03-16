@@ -1,8 +1,8 @@
-.product-link {
+.category-link {
     text-decoration: none;
 }
 
-.product-box {
+.category-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +14,7 @@
     transition: 0.3s;
 }
 
-.product-box:hover {
+.category-box:hover {
     transform: translateY(-1rem) scale(1.06);
 }
 
@@ -23,11 +23,11 @@
     transition: 0.3s;
 }
 
-.product-box:hover .category-box-image {
+.category-box:hover .category-box-image {
     transform: scale(1.1);
 }
 
-.product-name {
+.category-name {
     font-size: 1.3rem;
     width: 24vw;
     font-weight: bold;

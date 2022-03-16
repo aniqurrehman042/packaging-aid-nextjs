@@ -1,0 +1,31 @@
+#blogSection {
+    padding: 2rem 3em;
+}
+
+#blogSection h1 {
+    font-size: 3rem;
+    color: var(--yellowish-black);
+}
+
+#blogSection a {
+    text-decoration: none;
+}
+
+#blogSection h2 {
+    color: var(--yellowish-black);
+}
+
+#blogSection p {
+    color: var(--dark-grey);
+}
+
+.blog-box {
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px 2px rgba(0,0,0,0.3);
+    padding: 1em 2em;
+}
+
+.read-more {
+    font-size: 0.8rem;
+    color: var(--light-grey);
+}

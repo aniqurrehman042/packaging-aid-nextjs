@@ -1,0 +1,45 @@
+.category-page-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 6rem;
+}
+
+#categoryPageSection {
+    flex: 5;
+}
+
+.category-description {
+    white-space: pre-line;
+    line-height: 2em;
+    line-break: strict;
+    font-size: 0.9rem;
+}
+
+.products-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sidebar {
+    flex: 2;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+@media(max-width: 768px) {
+    .category-page-content {
+        padding: 1em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        margin-left: 0;
+    }
+
+    .products-area {
+        flex-direction: column;
+        align-items: center;
+    }
+}

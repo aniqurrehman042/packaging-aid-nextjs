@@ -1,9 +1,9 @@
-import categories from '../../data/raw/categories';
+import homePageCategories from '../../data/raw/home-page-categories';
 import CategoryBox from '../CategoryBox/CategoryBox';
 
 const Categories = () => {
-    const categoriesList = categories.map((category) => {
-        return <CategoryBox category={category}></CategoryBox>;
+    const categoriesList = homePageCategories.map((category, index) => {
+        return <CategoryBox key={index} category={category}></CategoryBox>;
     });
     return (
         <section id="categoriesSection">

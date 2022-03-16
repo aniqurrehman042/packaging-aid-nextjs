@@ -1,0 +1,8 @@
+.quote-form-container {
+    padding: 3em 20%;
+}
+
+.rounded-overflow-hidden {
+    border-radius: 20px;
+    overflow: hidden;
+}

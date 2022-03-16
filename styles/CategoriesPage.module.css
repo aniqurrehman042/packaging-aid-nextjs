@@ -1,0 +1,13 @@
+.categories-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 6em;
+}
+
+@media(max-width: 768px) {
+    .categories-area {
+        flex-direction: column;
+        padding: 0 1em;
+    }
+}

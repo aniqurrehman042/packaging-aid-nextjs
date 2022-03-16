@@ -1,11 +1,11 @@
 export default interface Product {
     _id?: any;
     id: string;
-    category_id: string;
+    categoryId: string;
     name: string;
-    short_description: string;
+    shortDescription: string;
     description: string;
-    meta_title: string;
-    meta_description: string;
-    img_urls: string[];
+    metaTitle: string;
+    metaDescription: string;
+    imgUrls: string[];
 }

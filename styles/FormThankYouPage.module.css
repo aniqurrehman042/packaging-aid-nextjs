@@ -1,0 +1,13 @@
+.thank-you-text {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.will-get-back-text {
+    color: var(--dark-grey);
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 150px;
+}

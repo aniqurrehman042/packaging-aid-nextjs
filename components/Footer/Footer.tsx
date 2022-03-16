@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-function Footer() {
+const Footer = () => {
     return (
         <footer id="footerSection">
             <div className="row">
