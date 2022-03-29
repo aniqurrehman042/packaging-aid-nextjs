@@ -13,6 +13,7 @@ const QuoteForm = ({className}: {className?: string}) => {
 
     const onSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
         const quoteUrl = 'https://www.packagingaid.com/quote';
+        console.log('form submit')
         e.preventDefault();
         if (isValid()) {
             setLoading(true);

@@ -1,16 +1,17 @@
 header {
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/packagingaid.appspot.com/o/banner_1.webp?alt=media');
-    background-size: contain;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/packagingaid.appspot.com/o/banner-1.webp?alt=media');
+    /* background-size: contain; */
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     background-color: var(--light-golden);
     height: 50vh;
-    padding: 10em 0 0 2em;
+    padding: 10em 0 0 5em;
     margin: 0;
 }
 
 header h1 {
-    color: var(--yellowish-black);
+    color: var(--color-primary);
     font-size: 2.2rem;
 }
 
@@ -20,20 +21,20 @@ header p {
 }
 
 header .btn-get-free-quote {
-    background-color: var(--primary-golden);
+    background-color: var(--color-primary);
     border: none;
     font-size: 1rem;
-    color: var(--yellowish-black);
+    color: white;
     border-radius: 5px;
     padding: 0.5em 1em;
     transition: 0.3s;
 }
 
 header .btn-get-free-quote:hover {
-    background-color: var(--yellowish-black);
+    background-color: white;
     border: none;
     font-size: 1rem;
-    color: white;
+    color: var(--yellowish-black);
     cursor: pointer;
 }
 

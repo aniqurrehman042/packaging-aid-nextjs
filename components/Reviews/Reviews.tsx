@@ -20,7 +20,7 @@ const Reviews = () => {
                     <i className="ic-quote fa fa-quote-right"></i>
                     <p className="review-text">
                         I had some ideas on what I wanted but they worked with me every step of the way. Even helping me on
-                        aspects of the project I didn't have answers for or understood. They brought life to my brand. From
+                        aspects of the project I didn&apos;t have answers for or understood. They brought life to my brand. From
                         artwork to the production of boxes. Everything is so flawless and excellent.
                     </p>
                     <img className="reviewer-photo"

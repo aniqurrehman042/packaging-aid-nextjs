@@ -1,7 +1,7 @@
 #footerSection {
     padding: 4em 2em;
     box-sizing: border-box;
-    background-color: black;
+    background-color: var(--yellowish-black);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -9,7 +9,7 @@
 
 #logoDesc {
     flex: 4;
-    color: var(--light-grey);
+    color: white;
     padding-right: 3em;
     font-size: 0.9em;
     line-height: 1.6em;
@@ -30,12 +30,12 @@
 }
 
 .column-heading {
-    color: #aa945d;
+    color: var(--color-secondary);
 }
 
 .page-link {
     text-decoration: none;
-    color: var(--grey);
+    color: white;
     font-size: 0.9rem;
     padding: 0.3em 0;
     transition: 0.1s;
@@ -50,13 +50,13 @@
 }
 
 .contact-area {
-    color: var(--grey);
+    color: white;
 }
 
 .icon-link {
     display: flex;
     align-items: center;
-    color: var(--grey);
+    color: white;
     padding: 0.3em 0;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .social-icon:hover {
-    background-color: var(--primary-golden);
+    background-color: var(--color-secondary);
     border-radius: 10px;
 }
 

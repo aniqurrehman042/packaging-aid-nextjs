@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://packagingaid.com/sitemap.xml

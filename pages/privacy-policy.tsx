@@ -76,3 +76,5 @@ const PrivacyPolicyPage: NextPage = () => {
         </article>
     );
 }
+
+export default PrivacyPolicyPage;

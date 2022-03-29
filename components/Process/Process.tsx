@@ -1,14 +1,12 @@
 const Process = () => {
     return (
         <section id="process-section">
-            <h2 className="section-heading no-margin">Simplify your packaging procurement</h2>
-            <h2 className="section-heading no-top-margin">In three steps</h2>
+            <h2 className="section-heading color-white no-margin">Simplify your packaging procurement</h2>
+            <h2 className="section-heading color-white no-top-margin">In three steps</h2>
             <div className="steps-row">
                 <div className="step-box">
                     <div className="step-no-icon">
-                        <span className="step-no">1</span>
                         <img className="step-img" src="https://firebasestorage.googleapis.com/v0/b/packagingaid.appspot.com/o/ic_share_your_idea.svg?alt=media" alt="Share Your Box Idea" />
-                        <span className="step-no no-margin visibility-hidden">1</span>
                     </div>
                     <div className="step-content">
                         <h3 className="step-heading">Share Your Box Idea</h3>
@@ -18,9 +16,7 @@ const Process = () => {
                 </div>
                 <div className="step-box">
                     <div className="step-no-icon">
-                        <span className="step-no no-margin">2</span>
                         <img className="step-img" src="https://firebasestorage.googleapis.com/v0/b/packagingaid.appspot.com/o/ic_artwork_approval.svg?alt=media" alt="Quotation &amp; Artwork Approval" />
-                        <span className="step-no no-margin visibility-hidden">2</span>
                     </div>
                     <div className="step-content">
                         <h3 className="step-heading">Quotation &amp; Artwork Approval</h3>
@@ -30,9 +26,7 @@ const Process = () => {
                 </div>
                 <div className="step-box">
                     <div className="step-no-icon">
-                        <span className="step-no">3</span>
                         <img className="step-img" src="https://firebasestorage.googleapis.com/v0/b/packagingaid.appspot.com/o/ic_box_shipping.svg?alt=media" alt="Box Construction &amp; Shipment" />
-                        <span className="step-no no-margin visibility-hidden">3</span>
                     </div>
                     <div className="step-content">
                         <h3 className="step-heading">Box Construction &amp; Shipment</h3>

@@ -49,7 +49,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
       <Footer />
       <Link href="/quote-form"><a className="right-vertical-fixed-button">Get A Free Quote Now</a></Link>
-      <a className="whatsapp-btn" target="_blank" href="https://wa.me/+19165818050/?text=Packaging%20Aid">
+      <a className="whatsapp-btn" target="_blank" rel="noreferrer" href="https://wa.me/+19165818050/?text=Packaging%20Aid">
         <img className="whatsapp-logo"
           src="https://firebasestorage.googleapis.com/v0/b/packagingaid.appspot.com/o/whatsapp-logo.png?alt=media" alt="WhatsApp" />
       </a>

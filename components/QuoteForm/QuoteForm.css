@@ -1,5 +1,5 @@
 .quote-form {
-    background-color: var(--light-golden);
+    background-color: var(--color-primary);
     padding: 1rem;
     position: relative;
 }
@@ -7,14 +7,14 @@
 .form-heading {
     font-size: 1rem;
     font-weight: bold;
-    color: var(--yellowish-black);
+    color: white;
     text-align: center;
 }
 
 .btn-submit {
     border: none;
-    background-color: var(--primary-golden);
-    color: var(--yellowish-black);
+    background-color: var(--color-secondary);
+    color: white;
     padding: 0.5rem 0;
     font-size: 1.2rem;
     cursor: pointer;

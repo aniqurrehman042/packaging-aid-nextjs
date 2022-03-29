@@ -1,6 +1,6 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
+import ProductBox from "../../components/ProductBox/ProductBox";
 import QuoteForm from "../../components/QuoteForm/QuoteForm";
-import SmallProduct from "../../components/SmallProduct/SmallProduct";
 import Category from "../../data/models/category.model";
 import Product from "../../data/models/product.model";
 import categories from "../../data/raw/categories";
@@ -10,7 +10,7 @@ type CategoryPageProps = { category: Category, categoryProducts: Product[]};
 
 const CategoryPage: NextPage<CategoryPageProps> = ({category, categoryProducts}) => {
     const smallProductsList = categoryProducts.map((product, index) => {
-        return <SmallProduct key={index} product={product}></SmallProduct>;
+        return <ProductBox key={index} product={product}></ProductBox>;
     });
 
     return (
@@ -39,7 +39,7 @@ const CategoryPage: NextPage<CategoryPageProps> = ({category, categoryProducts})
 export const getStaticPaths: GetStaticPaths = (context) => {
     return {
         paths: categories.map((category) => {return {params: {categoryId: category.id}}}),
-        fallback: "blocking",
+        fallback: false,
     };
 };
 

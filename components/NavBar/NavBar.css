@@ -5,13 +5,16 @@ nav, ul, li {
 }
 
 nav {
-    padding: 0 1em;
+    padding: 1em 5em 0 5em;
     color: white;
-    background-color: var(--light-golden);
     z-index: 100;
-    position: sticky;
+    position: absolute;
+    /* width: 100vw; */
     top: 0;
+    right: 0;
+    left: 0;
     transition: 0.3s;
+    box-sizing: border-box;
 }
 
 .shadow {
@@ -22,7 +25,7 @@ nav {
     display: none;
     color: var(--yellowish-black);
     font-size: 1.2rem;
-    background-color: var(--primary-golden);
+    background-color: var(--color-secondary);
     padding: 0.3em;
     border-radius: 6px;
     transition: 0.3s;
@@ -69,7 +72,7 @@ nav {
 .nav-menu-item {
     display: inline-block;
     padding: 2em 1em;
-    color: var(--yellowish-black);
+    color: white;
     text-decoration: none;
     font-weight: 700;
     transition: 0.3s;
@@ -77,9 +80,7 @@ nav {
 }
 
 .nav-menu-item:hover {
-    background-color: var(--yellowish-black);
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-    color: white;
+    color: var(--color-secondary);
 }
 
 .nav-contact-info ul {
@@ -87,24 +88,28 @@ nav {
 }
 
 .nav-contact-info li {
-    background-color: var(--primary-golden);
+    background-color: var(--color-secondary);
     margin-left: 0.5em;
     padding: 0.4em;
     border-radius: 6px;
     transition: 0.3s;
 }
 
+.nav-contact-info li:last-child {
+    background-color: var(--color-primary);
+}
+
 .nav-contact-info li:hover {
-    background-color: var(--yellowish-black);
+    background-color: white;
 }
 
 .nav-contact-info li:hover a {
-    color: white;
+    color: var(--yellowish-black);
 }
 
 .nav-contact-info a {
     text-decoration: none;
-    color: var(--yellowish-black);
+    color: white;
 }
 
 .parent-menu {
@@ -125,7 +130,7 @@ nav {
     overflow-x: hidden;
     border-radius: 10px;
     position: absolute;
-    background-color: var(--primary-golden);
+    background-color: white;
     top: 101%;
     left: 50%;
     transform: translateX(-50%);
@@ -155,7 +160,7 @@ nav {
 }
 
 .menu-dropdown ul li a:hover {
-    background-color: var(--yellowish-black);
+    background-color: var(--color-primary);
     color: white;
 }
 
@@ -175,7 +180,7 @@ nav {
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: var(--primary-golden);
+        background-color: white;
         justify-content: flex-start;
         z-index: 100;
     }
@@ -250,7 +255,7 @@ nav {
     }
 
     .nav-contact-info li:last-child:hover {
-        background-color: var(--primary-golden);
+        background-color: white;
     }
 
     .nav-contact-info li:last-child a {

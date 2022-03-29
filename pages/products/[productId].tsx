@@ -80,7 +80,7 @@ const ProductPage: NextPage<ProductPageProps> = ({ product }) => {
 export const getStaticPaths: GetStaticPaths = (context) => {
     return {
         paths: products.map((product) => { return { params: { productId: product.id } } }),
-        fallback: "blocking",
+        fallback: false,
     };
 };
 

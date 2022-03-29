@@ -1,5 +1,5 @@
 #process-section {
-    background-color: var(--light-golden);
+    background-color: var(--color-primary);
     padding: 3em 2em;
 }
 
@@ -10,9 +10,9 @@
 
 .step-box {
     width: 25%;
-    border: 1px solid var(--yellowish-black);
     border-radius: 0 100px 0 0;
     padding: 1em;
+    background-color: var(--color-primary-light);
     transition: 0.3s;
 }
 
@@ -22,13 +22,7 @@
 
 .step-no-icon {
     display: flex;
-    justify-content: space-between;
-}
-
-.step-no {
-    font-size: 3rem;
-    margin-top: 0;
-    color: var(--yellowish-black);
+    justify-content: center;
 }
 
 .step-content {
@@ -48,11 +42,12 @@
 .step-description {
     font-size: 0.9rem;
     line-height: 2em;
+    color: white;
 }
 
 .step-heading {
     font-size: 1.3rem;
-    color: var(--yellowish-black);
+    color: white;
 }
 
 .visibility-hidden {

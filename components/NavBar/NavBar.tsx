@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const NavBar = () => {
     let [isMobileDevice, setMobileDevice] = useState(false);
     let [isMenuOpen, setMenuOpen] = useState(false);
     let [isRetailMenuOpen, setRetailMenuOpen] = useState(false);
     let [isIndustryMenuOpen, setIndustryMenuOpen] = useState(false);
+
+    const router = useRouter();
 
     const calculateIfMobileDevice = () => (window.innerWidth
         || document.documentElement.clientWidth
@@ -14,20 +17,33 @@ const NavBar = () => {
     useEffect(() => {
         setMobileDevice(calculateIfMobileDevice());
         window.addEventListener('resize', () => setMobileDevice(calculateIfMobileDevice()));
-        document.addEventListener('scroll', () => {
-            if (document.body.scrollTop > 20 ||
-                document.documentElement.scrollTop > 20) {
-                document.getElementById('navbar')!.classList.add('shadow');
-            } else {
-                document.getElementById('navbar')!.classList.remove('shadow');
-            }
-        });
+
+        // Add shadow to navbar when scrolling
+        // document.addEventListener('scroll', () => {
+        //     if (document.body.scrollTop > 20 ||
+        //         document.documentElement.scrollTop > 20) {
+        //         document.getElementById('navbar')!.classList.add('shadow');
+        //     } else {
+        //         document.getElementById('navbar')!.classList.remove('shadow');
+        //     }
+        // });
     }, []);
+
+    // Switch navbar position to static and background to primary when not on homepage
+    useEffect(() => {
+        if (router.pathname !== '/') {
+            document.getElementById('navbar')!.classList.add('static');
+            document.getElementById('navbar')!.classList.add('bg-primary');
+        } else {
+            document.getElementById('navbar')!.classList.remove('static');
+            document.getElementById('navbar')!.classList.remove('bg-primary');
+        }
+    }, [router.pathname, router.isReady]);
 
     return (
         <nav id="navbar">
             <ul className="nav-list">
-                <li><Link href="/"><a><img className="nav-logo" src="https://firebasestorage.googleapis.com/v0/b/packagingaid.appspot.com/o/packaging-aid-logo.png?alt=media" alt="Logo" /></a></Link></li>
+                <li><Link href="/"><a><img className="nav-logo" src="https://firebasestorage.googleapis.com/v0/b/packagingaid.appspot.com/o/packaging-aid-logo-new.webp?alt=media" alt="Logo" /></a></Link></li>
                 <li className="nav-menu">
                     <ul className={`nav-menu-list ${isMobileDevice && !isMenuOpen ? 'menu-closed' : ''}`}>
                         <li id="menu-toggle" onClick={() => setMenuOpen(false)}><i className="fa fa-cross"></i></li>

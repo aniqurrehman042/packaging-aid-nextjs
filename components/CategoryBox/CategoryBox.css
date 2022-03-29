@@ -6,16 +6,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid var(--yellowish-black);
-    border-radius: 5px;
+    border-radius: 30px;
     margin: 1em 0;
     text-align: center;
     overflow: hidden;
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
+    background-color: var(--light-grey);
     transition: 0.3s;
-}
-
-.category-box:hover {
-    transform: translateY(-1rem) scale(1.06);
 }
 
 .category-box-image {
@@ -24,7 +21,7 @@
 }
 
 .category-box:hover .category-box-image {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .category-name {
@@ -32,17 +29,6 @@
     width: 24vw;
     font-weight: bold;
     color: var(--yellowish-black);
-}
-
-.btn-view-more {
-    display: inline-block;
-    border: none;
-    background-color: var(--primary-golden);
-    padding: 0.5em 1em;
-    margin-bottom: 2em;
-    border-radius: 5px;
-    color: var(--yellowish-black);
-    text-decoration: none;
 }
 
 @media(max-width: 768px) {

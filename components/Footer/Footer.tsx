@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="row">
                 <div id="logoDesc" className="column-3">
                     <img className="footer-logo"
-                        src="https://firebasestorage.googleapis.com/v0/b/packagingaid.appspot.com/o/packaging-aid-logo.png?alt=media"
+                        src="https://firebasestorage.googleapis.com/v0/b/packagingaid.appspot.com/o/packaging-aid-logo-new.webp?alt=media"
                         alt="Logo" />
                     <p>Packaging Aid is your one stop place for any kind of custom boxes. Whatever you dream, we will make it
                         for
@@ -57,7 +57,7 @@ const Footer = () => {
                         <p className="footer-address">2790 Sexton Pl, The Bronx, NY 10469, USA</p>
                     </div>
                     <div className="icon-link">
-                        <a href="https://instagram.com/packagingaid" target="_blank">
+                        <a href="https://instagram.com/packagingaid" target="_blank" rel="noreferrer">
                             <img className="social-icon"
                                 src="https://firebasestorage.googleapis.com/v0/b/packagingaid.appspot.com/o/instagram.png?alt=media" />
                         </a>

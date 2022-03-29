@@ -1,6 +1,6 @@
 .specifications {
     padding: 2em 4em;
-    background-color: var(--primary-golden);
+    background-color: var(--color-primary);
 }
 
 .specifications ul {
@@ -23,7 +23,7 @@
 
 .specification-item p {
     width: 10em;
-    color: var(--yellowish-black);
+    color: white;
     text-align: center;
     font-weight: bold;
     margin-bottom: 0;
