@@ -1,13 +1,24 @@
 header {
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/packagingaid.appspot.com/o/banner-1.webp?alt=media');
-    /* background-size: contain; */
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-color: var(--light-golden);
-    height: 50vh;
+    height: 100vh;
     padding: 10em 0 0 5em;
     margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header-bg-img {
+    object-fit: cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.header-bg-img-active {
+    opacity: 1;
 }
 
 header h1 {
@@ -47,19 +58,34 @@ header a {
 }
 
 .header-content {
-    width: 32vw;
+    position: relative;
+    width: 25vw;
 }
 
 .action-buttons {
     display: flex;
 }
 
-@media(max-width: 768px) {
-
+@media(max-width: 1280px) {
     header {
-        padding: 1em 0 1em 1em;
+        padding: 0;
         height: initial;
     }
+
+    .header-content {
+        display: none;
+    }
+
+    .header-bg-img {
+        height: auto;
+    }
+
+    .header-bg-img-active {
+        position: static;
+    }
+}
+
+@media(max-width: 768px) {
 
     .header-content {
         width: 45vw;
