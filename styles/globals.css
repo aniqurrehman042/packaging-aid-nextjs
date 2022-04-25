@@ -189,11 +189,11 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   transform: translate(calc(50% - 10px), -50%) rotate(-90deg);
-  background-color: var(--primary-golden);
+  background-color: var(--color-secondary);
   border-radius: 10px;
   border: none;
   transition: 0.3s;
-  color: var(--yellowish-black);
+  color: white;
   cursor: pointer;
   font-weight: bold;
   box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -201,8 +201,8 @@ body {
 }
 
 .right-vertical-fixed-button:hover {
-  background-color: var(--yellowish-black);
-  color: white;
+  background-color: white;
+  color: var(--yellowish-black);
 }
 
 .whatsapp-btn {

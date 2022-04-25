@@ -14,6 +14,7 @@ nav {
     left: 0;
     transition: 0.3s;
     box-sizing: border-box;
+    background-color: var(--color-primary);
 }
 
 .shadow {
