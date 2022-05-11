@@ -39,41 +39,36 @@ const ProductPage: NextPage<ProductPageProps> = ({ product }) => {
     ));
     return (
         <main>
-    <div className="top-content">
-        <section id="productGallerySection">
-            <div ref={zoomImageBox} className="zoom-image-area" onMouseOut={() => resetImage()} onMouseMove={(e) => imageMouseMove(e)}>
-                <img className="zoom-image" style={{transformOrigin: `${imageX}% ${imageY}%`}}
-                    src={`https://firebasestorage.googleapis.com/v0/b/packagingaid.appspot.com/o/${product?.imgUrls[currentImageIndex]}?alt=media`}
-                    alt={product?.name} />
-            </div>
-            <div className="product-thumbnails-area">
-                {productImages}
-            </div>
-        </section>
-        <section id="productDescriptionSection">
-            <h1 className="page-heading">
-                {product?.name}
-                <div className="heading-underline"></div>
-            </h1>
+            <div className="top-content">
+                <section id="productGallerySection">
+                    <div ref={zoomImageBox} className="zoom-image-area" onMouseOut={() => resetImage()} onMouseMove={(e) => imageMouseMove(e)}>
+                        <img className="zoom-image" style={{ transformOrigin: `${imageX}% ${imageY}%` }}
+                            src={`https://firebasestorage.googleapis.com/v0/b/packagingaid.appspot.com/o/${product?.imgUrls[currentImageIndex]}?alt=media`}
+                            alt={product?.name} />
+                    </div>
+                    <div className="product-thumbnails-area">
+                        {productImages}
+                    </div>
+                </section>
+                <section id="productDescriptionSection">
+                    <h1 className="page-heading">
+                        {product?.name}
+                        <div className="heading-underline"></div>
+                    </h1>
+                    {product.categoryId !== 'box-by-style' &&
+                        <div className="product-description"
+                            dangerouslySetInnerHTML={{ __html: product?.shortDescription }}></div>
+                    }
+                </section>
+                <section id="formQuoteSection">
+                    <QuoteForm />
+                </section>
+            </div >
+            <Specifications />
             {product.categoryId !== 'box-by-style' &&
-                <div className="product-description"
-                dangerouslySetInnerHTML={{__html: product?.shortDescription}}></div>
+                <ProductDetails description={product?.description} />
             }
-            {product.categoryId === 'box-by-style' &&
-            <Specifications />
-        }
-        </section>
-        <section id="formQuoteSection">
-            <QuoteForm />
-        </section>
-    </div >
-    {product.categoryId !== 'box-by-style' &&
-            <Specifications />
-        }
-        {product.categoryId !== 'box-by-style' &&
-            <ProductDetails description={product?.description} />
-        }
-</main >
+        </main >
     );
 }
 
