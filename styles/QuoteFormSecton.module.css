@@ -1,0 +1,165 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.col_3 {
+  width: 33.33%;
+  padding: 0 14px;
+  box-sizing: border-box;
+}
+.col_6 {
+  width: 50%;
+  padding: 0 14px;
+  box-sizing: border-box;
+}
+.col_12 {
+  width: 100%;
+  padding: 0.14px;
+  box-sizing: border-box;
+}
+/* prort_page_sec */
+.prort_page_sec {
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+
+/* heading */
+.heading h1 {
+  font-size: 35px;
+  font-weight: 700;
+  position: relative;
+  padding: 28px 0;
+  box-sizing: border-box;
+  color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.heading h1::before {
+  width: 135px;
+  height: 5px;
+  background-color: var(--color-primary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  border-radius: 10px;
+}
+.heading_text {
+  font-size: 14px;
+}
+/* heading end */
+
+/* quote_service */
+.quote_service {
+  margin-top: 50px;
+}
+
+.quote_service .qs_card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.quote_service .qs_card span h2 {
+  font-family: crimson;
+  font-size: 73px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-right: 40px;
+}
+.quote_service .qs_card_meta h5 {
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quote_service .qs_card_meta h5 {
+  font-size: 14px;
+}
+/* quote_service end */
+
+/* end prort_page_sec */
+
+/* quote_work_sec */
+.quote_work_sec {
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+/* heading */
+.ws_heading {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  color: #333;
+}
+.ws_heading::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 120px;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+
+/* work service */
+.work_service_card {
+  margin-top: 30px;
+}
+.work_service_card .wsc_img {
+  width: 33.33%;
+  padding: 0 14px;
+  box-sizing: border-box;
+}
+
+.work_service_card_meta {
+  width: calc(100% - 33.33%);
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+.work_service_card_meta h5 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.work_service_card_meta p {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* quote_work_sec end */
+
+/* responsive */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+  .col_3 {
+    width: 50%;
+  }
+  .col_6 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .col_3 {
+    width: 100%;
+  }
+  .wsc_img {
+    flex: 0 0 auto;
+    width: 16.66% !important;
+    padding: 0 7px;
+    box-sizing: border-box;
+  }
+  .wsc_img img {
+    width: 100%;
+  }
+}
